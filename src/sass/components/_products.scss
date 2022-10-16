@@ -70,17 +70,15 @@
 .products__item {
   position: relative;
   width: 280px;
-  // height: 420px;
+
   border-radius: 24px;
 
   @media screen and (min-width: 768px) {
     width: 224px;
-    // height: 428px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 370px;
-    // height: 536px;
   }
 }
 .products__item:nth-child(1) {
