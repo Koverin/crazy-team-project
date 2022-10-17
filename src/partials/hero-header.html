@@ -1,0 +1,146 @@
+<!-- Header section -->
+<header class="header header__page">
+  <div class="container header__group">
+    <nav class="header__nav">
+      <a class="header__logo" href="#logo">
+        <img
+          src="./images/hero-header/logo.png"
+          width="60"
+          height="65"
+          alt="ice"
+        />
+      </a>
+      <ul class="header__list list">
+        <li class="header__item">
+          <a class="header__link link" href="#home">Home</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link link" href="#how">How it’s made? </a>
+        </li>
+        <li class="header__item">
+          <a class="header__link link" href="#our-products">Our products</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div>
+      <button class="header__btn bnt-hidden" type="button">
+        Buy now
+        <svg class="header__btn-icon" width="12" height="12">
+          <use href="./images/hero-header/svg/icons.svg#next"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<!--HERO-->
+<section class="header-hero">
+  <div class="header-hero__dots container">
+    <div class="hero__box">
+      <h1 class="header-hero__title">
+        ice cream made with <span class="hero__title-cont">passion</span>
+      </h1>
+
+      <ul class="hero__list list">
+        <li class="hero__list-item">
+          <p class="hero__item-number">16</p>
+          <p class="hero__item-text">cafes</p>
+        </li>
+        <li class="hero__list-item">
+          <p class="hero__item-number">23</p>
+          <p class="hero__item-text">food trucks</p>
+        </li>
+      </ul>
+    </div>
+    <div class="hero__btn">
+      <a
+        class="hero__bnt-link btn__products"
+        href="#technology"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Products</a
+      >
+
+      <a
+        class="hero__btn-transperent hero__btn-transperent-link"
+        href="#technology"
+        target="_blank"
+        rel="noopener noreferrer"
+        >How it’s made?</a
+      >
+    </div>
+
+    <div class="hero__plate-box">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero-header/ice-cream_desk-ice-cream@1x.png 1x,
+            ./images/hero-header/ice-cream_desk-ice-cream@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./images/hero-header/ice-cream_tab-ice-cream@1x.png 1x,
+            ./images/hero-header/ice-cream_tab-ice-cream@2x.png 2x
+          "
+        />
+        <img
+          class="hero__plate-ice"
+          src="./images/hero-header/ice-cream_desk-ice-cream@1x.png"
+          alt="ice-cream"
+          width="255"
+        />
+      </picture>
+
+      <div class="hero__text-box">
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button class="arrow__btn" aria-label="about lorem" type="button">
+          <svg class="hero__arrow" width="40" height="15">
+            <use
+              href="./images/hero-header/svg/icons.svg#icon-hero-arrow"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="hero__icecream-box">
+      <picture>
+        <source
+          srcset="
+            ./images/hero-header/icecream/ice-cream-dek.png    1x,
+            ./images/hero-header/icecream/ice-cream-dek@2x.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/hero-header/icecream/ice-cream-tab.png    1x,
+            ./images/hero-header/icecream/ice-cream-tab@2x.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/hero-header/icecream/ice-cream-mob.png    1x,
+            ./images/hero-header/icecream/ice-cream-mob@2x.png 2x
+          "
+          media="(min-width:320px)"
+        />
+        <img
+          class="hero__icecream"
+          src="./images/hero-header/icecream/ice-cream-dek.png"
+          width="484"
+          alt="ice-cream"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
