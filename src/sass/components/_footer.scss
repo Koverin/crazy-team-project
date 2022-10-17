@@ -1,0 +1,201 @@
+
+.footer__main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+
+.footer {
+    background-color: #84A178;
+}
+
+.footer__title {
+    padding-top: 0;
+}
+
+.footer__title-text {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: calc(37 / 30);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    
+    @media screen and (min-width: 320px) and (max-width: 767px){
+        font-size: 18px;
+        line-height: calc(22 / 18);
+        width: 232px;
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        font-size: 26px;
+        line-height: calc(32 / 26);
+        width: 352px;
+        padding-bottom: 32px;
+
+    } 
+}
+
+.footer__ingredient {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: calc(71 / 58);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+    color: #FCFCFC;
+    
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        font-size: 34px;
+        line-height: calc(41 / 34);
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        font-size: 48px;
+        line-height: calc(59 / 48);
+    }
+}
+
+.footer__socials {
+    padding-top: 12px;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        padding-top: 42px;
+    }
+}
+
+
+.footer__socials-icon {
+    fill: #84a178;
+
+    @media screen and (min-width: 320px) and (max-width: 767px){
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.footer__socials-icon:hover,
+.footer__socials-icon:focus {
+    fill: #FCFCFC;
+}
+
+.footer__socials-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-bottom: 40px;
+    list-style: none;
+    align-items: baseline;
+    
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+        margin-bottom: 32px;
+    }
+    
+    @media screen and (max-width: 320px) {
+        margin-bottom: 38px;
+    }
+}
+
+
+.footer__footer-list {
+    margin-left: auto;
+    padding-bottom: 60px;
+
+    @media screen and (max-width: 320px) {
+        padding-bottom: 40px;
+    }
+}
+
+.footer__contact {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        text-align: right;
+    }
+    @media screen and (min-width: 768px) {
+        text-align: right;
+    }
+    
+}
+
+.footer__contact-text {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.02em;
+    
+    color: #131313;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        font-size: 12px;
+        line-height: calc(26 / 12);
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: calc(26 / 14);
+    }
+    
+}
+
+.footer__contact-tel {
+    font-family: inherit;
+    text-decoration: none;
+    color: #FCFCFC;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.02em;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        font-size: 12px;
+        line-height: calc(26 / 12);
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: calc(26 / 14);
+    }
+}
+
+.footer__copy {
+    text-align: center;
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+    color: #7A7A7A;
+    
+    
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        font-size: 14px;
+        line-height: 152%;
+        padding-top: 16px;
+        padding-bottom: 62px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 186%;
+        padding-top: 14px;
+        padding-bottom: 13px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 12px;
+        line-height: 186%;
+    }
+    
+}
+
+.footer__text {
+    justify-content: center;
+    align-items: center;
+}
