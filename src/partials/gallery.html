@@ -64,7 +64,38 @@
             </picture>
           </div>
         </li>
-          </ul>
+        <li class="customer__item swiper-slide">
+          <div class="customer__img">
+            <picture>
+              <source
+                srcset="
+                  ./images/gallery/desktop/gallery-1-desktop.jpg 1x,
+                  ./images/gallery/desktop/gallery-1-desktop@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery/tablet/gallery-tablet.jpg 1x,
+                  ./images/gallery/tablet/gallery-tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery/mobile/gallery-mobile.jpg 1x,
+                  ./images/gallery/mobile/gallery@2x-mobile.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/gallery/desktop/gallery-1-desktop.jpg"
+                alt="Emily, Los Angeles"
+              />
+            </picture>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
