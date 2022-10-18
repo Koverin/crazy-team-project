@@ -1,3 +1,10 @@
-<symbol id="icon-arrow" viewBox="0 0 84 32">
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+      <symbol id="icon-send" viewBox="0 0 32 32">
+      <path  d="M32 0 0 18l10.227 3.788L26 7 14.002 23.186l.01.004-.012-.004V32l5.735-6.691L27 28l5-28z"/>
+    </symbol>
+    <symbol id="arrow" viewBox="0 0 84 32">
 <path d="M82.643 17.191c0.781-0.781 0.781-2.047 0-2.828l-12.728-12.728c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l11.314 11.314-11.314 11.314c-0.781 0.781-0.781 2.047 0 2.829s2.047 0.781 2.828 0l12.728-12.728zM0.76 17.777h80.469v-4h-80.469v4z"></path>
 </symbol>
+  </defs>
+</svg>
