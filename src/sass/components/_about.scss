@@ -31,6 +31,7 @@
   }
 
   &__tittle {
+    // width: 210px;
     font-weight: 400;
     font-size: 30px;
     line-height: 1.26;
@@ -38,6 +39,8 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     margin-bottom: 32px;
+    // margin-left: auto;
+    // margin-right: auto;
     font-family: Seymour One, sans-serif;
     text-transform: uppercase;
     color: #fcfcfc;
@@ -53,6 +56,12 @@
       font-size: 36px;
       line-height: 1.25;
     }
+
+    @media screen and (max-width: 767px) {
+      width: 210px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__list {
@@ -65,8 +74,8 @@
 
     @media screen and (min-width: 768px) {
       width: 334px;
-      margin: 0;
-      margin-right: 15px;
+      // margin: 0;
+      // margin-right: 15px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -174,9 +183,10 @@
 
   &__img {
     position: relative;
-    justify-content: center;
+    justify-content: flex-start;
+    // justify-content: center;
     display: flex;
-    margin: auto;
+    margin: 0;
   }
 
   &__bgn {
@@ -199,17 +209,29 @@
 
     @media screen and (min-width: 768px) {
       // margin: 72px 32px 0 15px;
-      width: 335px;
-      height: 335px;
+      width: 100%;
+      height: 100%;
       border-radius: 165.879px;
       bottom: 26px;
     }
 
     @media screen and (min-width: 1200px) {
-      width: 500px;
-      height: 500px;
+      width: 100%;
+      height: 100%;
       border-radius: 1852.2px;
       bottom: 39px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    @media screen and (max-width: 479px) {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
     }
   }
 
@@ -245,7 +267,8 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     padding: 0;
-    justify-content: center;
+    justify-content: space-between;
+    // justify-content: center;
     margin-top: 121px;
   }
 }
