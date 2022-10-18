@@ -3,13 +3,8 @@
   <div class="container header__group">
     <nav class="header__nav">
       <a class="header__logo" href="#logo">
-        <img
-          src="./images/hero-header/logo.png"
-          width="60"
-          height="65"
-          alt="ice"
-        />
-      </a>
+        <img src="/images/hero-header/logo.png"
+      /></a>
       <ul class="header__list list">
         <li class="header__item">
           <a class="header__link link" href="#home">Home</a>
@@ -25,17 +20,64 @@
         </li>
       </ul>
     </nav>
-    <div>
-      <button class="header__btn bnt-hidden" type="button">
-        Buy now
-        <svg class="header__btn-icon" width="12" height="12">
-          <use href="./images/hero-header/svg/icons.svg#next"></use>
+    <div class="header-burg-and-btn">
+      <button type="button" class="mobile-menu-open" data-menu-open>
+        <svg class="mobile-menu-svg" width="32" height="32">
+          <use href="./images/hero-header/svg/icons.svg#icon-Burger"></use>
         </svg>
+      </button>
+      <button class="header__btn hidden" type="button" data-modal-open-buy_now>
+        Buy now
       </button>
     </div>
   </div>
+  <div class="mobile-menu" data-menu>
+    <div class="container mobile-menu__container">
+      <div class="logo-and-burger">
+        <a class="logo link" href="./index.html" lang="en">
+          <svg class="logo-svg">
+            <use href="./images/hero-header/svg/icons.svg#logo"></use>
+          </svg>
+        </a>
+        <button type="button" class="mobile-menu__close-btn" data-menu-close>
+          <svg class="mobile-menu__close-icon" width="32" height="32">
+            <use href="./images/hero-header/svg/icons.svg#close-button"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="list mobile-menu__menu">
+        <li class="mobile-menu__menu-item">
+          <a class="mobile-menu__menu-link link" href="#header">Home </a>
+        </li>
+        <li class="mobile-menu__menu-item">
+          <a class="mobile-menu__menu-link link" href="#about"
+            >How it’s made?</a
+          >
+        </li>
+        <li class="mobile-menu__menu-item">
+          <a class="mobile-menu__menu-link link" href="#products"
+            >Our products</a
+          >
+        </li>
+        <li class="mobile-menu__menu-item">
+          <a class="mobile-menu__menu-link link" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <div class="mobile-burg-btn">
+        <button
+          class="header__btn bnt-hidden button-arrow"
+          type="button"
+          data-modal-open-buy_now
+        >
+          Buy now
+        </button>
+      </div>
+    </div>
+  </div>
 </header>
-<!--HERO-->
+<!-- HERO-->
 <section class="header-hero">
   <div class="header-hero__dots container">
     <div class="hero__box">
@@ -103,9 +145,7 @@
         </p>
         <button class="arrow__btn" aria-label="about lorem" type="button">
           <svg class="hero__arrow" width="40" height="15">
-            <use
-              href="./images/hero-header/svg/icons.svg#icon-hero-arrow"
-            ></use>
+            <use href="./images/hero-header/svg/icons.svg#arrow"></use>
           </svg>
         </button>
       </div>
@@ -144,3 +184,4 @@
     </div>
   </div>
 </section>
+<script src="./js/menu.js"></script>
