@@ -241,10 +241,7 @@ body {
     background-size: contain;
     width: 1200px;
   }
-}
-
-@media screen and (max-width: 767px) {
-  .header-hero__point {
+  @media screen and (max-width: 767px) {
     margin: 0 auto;
     background-image: url(../images/hero_header/points/dots-mob-min.png);
     background-repeat: no-repeat;
@@ -677,7 +674,7 @@ body {
   &:hover,
   &:focus,
   &.current {
-    color: #f8d24e;
+    color: black;
   }
 }
 
