@@ -1,15 +1,16 @@
 .contacts {
     background-image: linear-gradient(to right, rgba(132, 161, 120, 1), rgba(132, 161, 120, 1));
     padding-top: 25px;
-    padding-bottom: 20px;
+    padding-bottom: 38px;
 
     @media screen and (min-width: 768px) {
-        padding-top: 40px;
+        padding-top: 60px;
+        padding-bottom: 40px;
     }
 
     @media screen and (min-width: 1200px) {
         padding-top: 50px;
-        padding-bottom: 60px;
+        padding-bottom: 120px;
     }
 
     &__list {
