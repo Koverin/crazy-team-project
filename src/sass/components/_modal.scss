@@ -3,12 +3,16 @@ fieldset {
     margin: 0;
 }
 
+
+
+
 // Видалити, коли виправлять
 .container {
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
 
     @media screen and (min-width: 480px) {
         width: 480px;
@@ -66,9 +70,9 @@ fieldset {
     /*  Установаем ширину окна  */
     width: calc(100% - 30px);
     min-width: 280px;
-    max-width: 568px;
-    height: 100vh;
-    overflow: overlay;
+    max-width: 480px;
+    height: 90vh;
+    overflow: auto;
 
     padding: 30px 28px;
 
@@ -93,7 +97,7 @@ fieldset {
     border-radius: 15.7808px;
 
     @media screen and (min-width: 768px) {
-        width: 568px;
+        max-width: 568px;
         height: 664px;
         padding: 32px 54px;
         overflow: visible;
@@ -106,20 +110,23 @@ fieldset {
         padding-right: 20px;
         padding-bottom: 32px;
 
+
         @media screen and (min-width: 768px) {
                 width: 568px;
                 max-height: 995px;
-                min-height: 100vh;
+                // min-height: 100vh;
                 padding: 32px 40px;
-                margin-bottom: 24px;
+                
                 overflow: overlay;             
         }
     }
 
 
+
+
     &--read-more {
         padding: 28px;
-        height: 459px;
+        height: inherit;
         @media screen and (min-width: 768px) {
             padding: 32px 60px;
             height: 449px;
@@ -129,7 +136,7 @@ fieldset {
 
     &--our-location {
         padding: 28px;
-        height: 365px;
+        height: inherit;
         @media screen and (min-width: 768px) {
                 padding: 32px 60px;
                 height: 458px;
@@ -137,7 +144,7 @@ fieldset {
     }
 
     &--franchise {
-        height: 674px;
+        height: inherit;
         padding: 28px;
         @media screen and (min-width: 768px) {
                 padding: 32px 60px;
@@ -183,11 +190,16 @@ fieldset {
         }
     }
 
+    &__group > &__field--mb16 {
+        margin-bottom: 16px;
+    }
+
     &__wrapped {
         margin: 0 auto;
         width: 132px;
         height: 200px;
         position: relative;
+        
             
         &--green {
             &::after {
@@ -258,7 +270,7 @@ fieldset {
     }
 
     &__img {
-       
+        
         position: relative;
         display: block;
         margin-left: auto;
@@ -276,6 +288,9 @@ fieldset {
         }
 
     }
+       &__group--mb32 {
+        margin-bottom: 32px;
+       }
 
     &__input {
         width: 100%;
@@ -380,6 +395,7 @@ fieldset {
 
         @media screen and (min-width: 768px) {
             gap: 20px;
+            margin-bottom: 48px;
         }
     }
 
@@ -465,6 +481,8 @@ fieldset {
         }
 
     &__compound-list {
+        margin-right: auto;
+        margin-left: auto;
         max-width: 488px;
         margin-bottom: 48px;
     }
@@ -483,7 +501,7 @@ fieldset {
         
             color: #131313;
 
-        margin-bottom: 17px;
+        margin-bottom: 24px;
 
         
     }
@@ -508,20 +526,14 @@ fieldset {
             margin-bottom: 11px;
         }
     }
-    &__compound-feature {
 
-    }
-    &__compound-values {
-        
-    }
 
     // Модалка Read more
     &__discription {
             font-family: 'Montserrat';
-            font-style: normal;
             font-weight: 400;
             font-size: 14px;
-            line-height: 1.40;
+            line-height: 1.375;
             color: #131313;
             text-align: start;
 
@@ -533,44 +545,87 @@ fieldset {
     }
 
     &__video {
-        width: 224px;
+        width: 100%;
         height: 199px;
         margin-bottom: 20px;
 
+        display: block;
+        border: 0;
+        margin-left: auto;
+        margin-right: auto;
+
         @media screen and (min-width: 768px) {
-            width: 448px;
-                height: 205px;
-                margin-bottom: 32px;
+            width: 100%;;
+            height: 205px;
+            margin-bottom: 32px;
         }
 
-     }
-         &__map {
-             width: 224px;
-             height: 199px;
-             margin-bottom: 24px;
+    }
+    &__map {
+        display: block;
+        border: 0;
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 100%;
+        height: 199px;
+        margin-bottom: 24px;
     
-             @media screen and (min-width: 768px) {
-                 width: 448px;
-                 height: 260px;
-                 margin-bottom: 32px;
-             }
+            @media screen and (min-width: 768px) {
+                width: 100%;
+                height: 260px;
+                margin-bottom: 32px;
+            }
     
-         }
+    }
          
-         &__link {
-            text-decoration: none;
-            width: 134px;
-         }
+    &__link {
+        text-decoration: none;
+        width: 134px;
+
+            @media screen and (min-width: 768px) {
+                width: 145px;
+            }
+    }
         
 }
 .modal__title--w221px {
     text-align: center;
     width: 221px;
+    margin-bottom: 20px;
+
     @media screen and (min-width: 768px) {
-            width: 322px;
-        }
-    
+        width: 322px;
+    }
 }
+
+@media screen and (min-width: 768px) {
+    .modal__title--mb32 {
+        margin-bottom: 32px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .modal__title--mb24 {
+        margin-bottom: 24px;
+    }
+}
+
+    
+
+
+
+
+.modal__title--w142px {
+    width: 142px;
+    font-size: 20px;
+    margin-bottom: 22px;
+
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+}
+
 .modal--franchise > .modal__discription {
     margin-bottom: 24px;
     @media screen and (min-width: 768px) {
@@ -643,17 +698,20 @@ fieldset {
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
+    gap: 20px;
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
         column-gap: 30px;
-        margin-bottom: 32px;
+        margin-bottom: 44px;
     }
     
 }
 
 .checkbox__field {
+    cursor: pointer;
+
 
     &:not(:last-child) {
     margin-bottom: 20px;
@@ -666,6 +724,7 @@ fieldset {
     }
     
 }
+
 
 // Активація кастомного чекбоксу
 .checkbox--none:checked + .checkbox__label {
@@ -689,6 +748,7 @@ fieldset {
     filter: drop-shadow(0 5.26027px 19.726px #d414431a);
     width: 132px;
     height: 150px;
+    user-select: none;
     
     border-top-width: 0;
     border-radius: 15.7808px;
