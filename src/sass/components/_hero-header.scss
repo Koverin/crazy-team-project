@@ -73,7 +73,6 @@ body {
 .header {
   width: 100%;
   padding-top: 12px;
-  background-color: #84a178;
 }
 
 .header__group {
@@ -189,7 +188,7 @@ body {
     width: 12px;
     height: 12px;
 
-    background-image: url(../images/hero-header/svg/arrow-blac.svg);
+    background-image: url(../images/hero_header/svg_icon/arrow-blac.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -202,7 +201,7 @@ body {
     color: #fcfcfc;
     background: #0a8817;
     &::after {
-      background-image: url(../images/hero-header/svg/arrow-wt.svg);
+      background-image: url(../images/hero_header/svg_icon/arrow-wt.svg);
     }
   }
 }
@@ -228,7 +227,7 @@ body {
 
   @media screen and (min-width: 768px) {
     margin: 0 auto;
-    background-image: url(../images/hero-header/dots/dots-tab-min.png);
+    background-image: url(../images/hero_header/points/dots-tab-min.png);
     background-repeat: no-repeat;
     background-position-y: 100%;
     background-size: contain;
@@ -236,7 +235,7 @@ body {
   }
   @media screen and (min-width: 1200px) {
     margin: 0 auto;
-    background-image: url(../images/hero-header/dots/dots-dek-min.png);
+    background-image: url(../images/hero_header/points/dots-dek-min.png);
     background-repeat: no-repeat;
     background-position-y: 100%;
     background-size: contain;
@@ -244,21 +243,22 @@ body {
   }
 }
 
-.header-hero__point {
-  @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  .header-hero__point {
     margin: 0 auto;
-    background-image: url(../images/hero-header/dots/dots-mob-min.png);
+    background-image: url(../images/hero_header/points/dots-mob-min.png);
     background-repeat: no-repeat;
     background-position-y: 100%;
     background-size: contain;
   }
 }
+
 .header-hero__title {
   margin-bottom: 32px;
   width: 247px;
   font-family: 'Seymour One';
   font-size: 26px;
-  line-height: 33px;
+  line-height: 1.26;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #fcfcfc;
@@ -268,14 +268,14 @@ body {
     margin-bottom: 0px;
     width: 181px;
     font-size: 18px;
-    line-height: 23px;
+    line-height: 1.27;
   }
   @media screen and (min-width: 1200px) {
     margin-top: 45px;
     position: absolute;
     width: 367px;
     font-size: 38px;
-    line-height: 48px;
+    line-height: 1.26;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
@@ -292,7 +292,7 @@ body {
   }
   @media screen and(min-width:1200px) {
     font-size: 38px;
-    line-height: 48px;
+    line-height: 1.26;
     letter-spacing: 0.04em;
   }
 }
@@ -335,7 +335,7 @@ body {
 .hero__item-number {
   font-weight: 900;
   font-size: 28px;
-  line-height: 34px;
+  line-height: 1.21;
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -344,7 +344,7 @@ body {
   @media screen and (min-width: 1200px) {
     font-weight: 900;
     font-size: 46px;
-    line-height: 56px;
+    line-height: 1.21;
 
     text-align: right;
     letter-spacing: 0.04em;
@@ -362,7 +362,7 @@ body {
   }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.21;
     width: 100px;
     text-align: right;
     color: #fcfcfc;
@@ -457,7 +457,7 @@ body {
   @media screen and (min-width: 768px) {
     width: 151px;
     font-size: 12px;
-    line-height: 1.4;
+    line-height: 140%;
 
     color: #fcfcfc;
   }
@@ -474,7 +474,7 @@ body {
   text-align: center;
   font-weight: 600;
   font-size: 8px;
-  line-height: 10px;
+  line-height: 1.25;
   color: #f8d24e;
   text-decoration-line: underline;
   background-color: transparent;
@@ -498,7 +498,7 @@ body {
   @media screen and (min-width: 1200px) {
     font-weight: 600;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.21;
     padding: 12px 22px;
   }
 }
@@ -518,7 +518,7 @@ body {
   background-color: transparent;
   font-weight: 600;
   font-size: 8px;
-  line-height: 10px;
+  line-height: 1.25;
 
   &:hover,
   &:focus {
@@ -537,14 +537,13 @@ body {
   @media screen and (min-width: 1200px) {
     font-weight: 600;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.28;
     padding: 12px 34px;
   }
 }
 
 .arrow__btn {
   border: 0;
-  fill: #fff;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -568,6 +567,9 @@ body {
   @media screen and (min-width: 1200px) {
     margin-top: 32px;
   }
+}
+.hero__arrow {
+  fill: #fcfcfc;
 }
 // ========================================
 .logo-svg {
