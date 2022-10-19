@@ -1,18 +1,22 @@
 .customer {
 &__conteiner {
     width: 320px;
-    
+    /* padding-bottom: 48px за макетом + 345px; */
     padding-bottom: 48px;
     padding-top: 80px;
     cursor: pointer;
     @media screen and (min-width: 768px) {
       width: 768px;
       padding-top: 60px;
+      /* padding-bottom: 80px за макетом + 308px; */
+      padding-bottom: 388px ;
     }
     @media screen and (min-width: 1200px) {
       width: 1200px;
       height: 1020px ;
       padding-top: 128px;
+       /* padding-bottom: 100px за макетом + 96px; */
+       padding-bottom: 196px ;
     }
 }
 &__foto {
