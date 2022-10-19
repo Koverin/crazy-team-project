@@ -26,12 +26,12 @@
       </ul>
     </nav>
     <div class="header-burg-and-btn">
-      <button type="button" class="mobile-menu-open" data-menu-open>
+      <button type="button" class="mobile-menu-open " data-menu-open>
         <svg class="mobile-menu-svg" width="32" height="32">
           <use href="./images/sprite.svg#icon-Burger"></use>
         </svg>
       </button>
-      <button class="header__btn hidden" type="button">Buy now</button>
+      <button class="header__btn hidden js-open-modal" data-modal="buy_menu" type="button">Buy now</button>
     </div>
   </div>
   <div class="mobile-menu" data-menu>
@@ -70,9 +70,9 @@
 
       <div class="mobile-burg-btn">
         <button
-          class="header__btn bnt-hidden button-arrow"
+          class="header__btn bnt-hidden button-arrow js-open-modal"
           type="button"
-          data-modal-open-buy_now
+          data-modal="buy_menu"
         >
           Buy now
         </button>
