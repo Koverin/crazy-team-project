@@ -1,0 +1,190 @@
+<!-- Header section -->
+<header class="header header__page">
+  <div class="container header__group">
+    <nav class="header__nav">
+      <a class="header__logo" href="#logo">
+        <img
+          src="./images/hero_header/logo/logomain.png"
+          width="60"
+          height="65"
+          alt="ice"
+        />
+      </a>
+      <ul class="header__list list">
+        <li class="header__item">
+          <a class="header__link link" href="#home">Home</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link link" href="#how">How it’s made? </a>
+        </li>
+        <li class="header__item">
+          <a class="header__link link" href="#our-products">Our products</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-burg-and-btn">
+      <button type="button" class="mobile-menu-open " data-menu-open>
+        <svg class="mobile-menu-svg" width="32" height="32">
+          <use href="./images/sprite.svg#icon-Burger"></use>
+        </svg>
+      </button>
+      <button class="header__btn hidden js-open-modal" data-modal="buy_menu" type="button">Buy now</button>
+    </div>
+  </div>
+  <div class="mobile-menu" data-menu>
+    <div class="container mobile-menu__container">
+      <div class="logo-and-burger">
+        <a class="logo link" href="./index.html" lang="en">
+          <svg class="logo-svg">
+            <use href="./images/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <button type="button" class="mobile-menu__close-btn" data-menu-close>
+          <svg class="mobile-menu__close-icon" width="32" height="32">
+            <use href="./images/sprite.svg#close-button"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="list mobile-menu__menu">
+        <li class="mobile-menu__menu-item">
+          <a class="mobile-menu__menu-link link" href="#header">Home </a>
+        </li>
+        <li class="mobile-menu__menu-item">
+          <a class="mobile-menu__menu-link link" href="#about"
+            >How it’s made?</a
+          >
+        </li>
+        <li class="mobile-menu__menu-item">
+          <a class="mobile-menu__menu-link link" href="#products"
+            >Our products</a
+          >
+        </li>
+        <li class="mobile-menu__menu-item">
+          <a class="mobile-menu__menu-link link" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <div class="mobile-burg-btn">
+        <button
+          class="header__btn bnt-hidden button-arrow js-open-modal"
+          type="button"
+          data-modal="buy_menu"
+        >
+          Buy now
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- HERO-->
+<section class="header-hero">
+  <div class="header-hero__dots container">
+    <div class="hero__box">
+      <h1 class="header-hero__title">
+        ice cream made with <span class="hero__title-cont">passion</span>
+      </h1>
+
+      <ul class="hero__list list">
+        <li class="hero__list-item">
+          <p class="hero__item-number">16</p>
+          <p class="hero__item-text">cafes</p>
+        </li>
+        <li class="hero__list-item">
+          <p class="hero__item-number">23</p>
+          <p class="hero__item-text">food trucks</p>
+        </li>
+      </ul>
+    </div>
+    <div class="hero__btn">
+      <a
+        class="hero__bnt-link btn__products"
+        href="#technology"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Products</a
+      >
+
+      <a
+        class="hero__btn-transperent hero__btn-transperent-link"
+        href="#technology"
+        target="_blank"
+        rel="noopener noreferrer"
+        >How it’s made?</a
+      >
+    </div>
+
+    <div class="hero__plate-box">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero_header/ice-cream_desk-ice-cream@1x.png 1x,
+            ./images/hero_header/ice-cream_desk-ice-cream@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./images/hero_header/ice-cream_tab-ice-cream@1x.png 1x,
+            ./images/hero_header/ice-cream_tab-ice-cream@2x.png 2x
+          "
+        />
+        <img
+          class="hero__plate-ice"
+          src="./images/hero_header/ice-cream_desk-ice-cream@1x.png"
+          alt="ice-cream"
+          width="255"
+        />
+      </picture>
+
+      <div class="hero__text-box">
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button class="arrow__btn" aria-label="about lorem" type="button">
+          <svg class="hero__arrow" width="40" height="15">
+            <use href="./images/sprite.svg#icon-hero-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="hero__icecream-box">
+      <picture>
+        <source
+          srcset="
+            ./images/hero_header/icecream/ice-cream-dek.png    1x,
+            ./images/hero_header/icecream/ice-cream-dek@2x.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/hero_header/icecream/ice-cream-tab.png    1x,
+            ./images/hero_header/icecream/ice-cream-tab@2x.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/hero_header/icecream/ice-cream-mob.png    1x,
+            ./images/hero_header/icecream/ice-cream-mob@2x.png 2x
+          "
+          media="(min-width:320px)"
+        />
+        <img
+          class="hero__icecream"
+          src="./images/hero_header/icecream/ice-cream-dek.png"
+          width="484"
+          alt="ice-cream"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+<script src="./js/menu.js"></script>
