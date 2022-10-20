@@ -18,6 +18,10 @@
        /* padding-bottom: 100px за макетом + 96px; */
        padding-bottom: 196px ;
     }
+
+    @media screen and (min-width: 768px) {
+      padding-top: 0;
+    }
 }
 &__foto {
     width:85px; 
