@@ -1,5 +1,5 @@
 <section class="contacts">
-  <div class="container">
+  <div class="container contacts__container">
     <h2 class="visually-hidden">Contacts</h2>
     <ul class="contacts__list list">
       <li class="contacts__items">
@@ -92,13 +92,21 @@
       </li>
     </ul>
     <div class="btn">
-      <button type="button" class="btn__first">
+      <button
+        type="button"
+        class="btn__first js-open-modal"
+        data-modal="modal_our-location"
+      >
         Our Locations
         <svg class="btn__icon" width="12" height="12">
           <use href="/src/images/sprite.svg#btn-icon"></use>
         </svg>
       </button>
-      <button type="button" class="btn__first btn__first--light">
+      <button
+        type="button"
+        class="btn__first btn__first--light js-open-modal"
+        data-modal="modal_franchise"
+      >
         Franchise
         <svg class="btn__icon" width="12" height="12">
           <use href="/src/images/sprite.svg#btn-icon"></use>

@@ -1,16 +1,32 @@
 .contacts {
+    position: relative;
+    height: 1135px;
+    display: flex;
+    justify-content: center;
+
+    
     background-image: linear-gradient(to right, rgba(132, 161, 120, 1), rgba(132, 161, 120, 1));
-    padding-top: 25px;
-    padding-bottom: 20px;
 
     @media screen and (min-width: 768px) {
-        padding-top: 40px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding-top: 50px;
-        padding-bottom: 60px;
-    }
+            height: 340px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            height: 565px;
+        }
+    
+        &__container {
+            position: absolute;
+            top: -345px;
+    
+            @media screen and (min-width: 768px) {
+                top: -304px;
+            }
+    
+            @media screen and (min-width: 1200px) {
+                top: -96px;
+            }
+        }
 
     &__list {
         display: flex;
@@ -31,7 +47,6 @@
             gap: 32px;
             margin-bottom: 64px;
         }
-
     }
 
     &__items {
@@ -55,7 +70,6 @@
             flex-wrap: wrap;
             max-width: 368px;
         }
-
     }
 
     &__title {
@@ -63,6 +77,7 @@
         margin-bottom: 20px;
         padding: 0 22px;
         font-size: 12px;
+        line-height: 1.86;
         font-weight: 500;
         text-transform: uppercase;
         background: #F8D24E;
@@ -93,6 +108,10 @@
 
     &__tel,
     &__mail {
+        font-size: 12px;
+        line-height: 1.83;
+        font-weight: 500;
+
         @media screen and (min-width: 768px) {
             font-size: 14px;
             line-height: 1.83;
@@ -102,14 +121,15 @@
         @media screen and (min-width: 1200px) {
             font-size: 16px;
         }
-
-
     }
 
     &__text {
         display: flex;
         flex-direction: column;
         margin-bottom: 8px;
+        font-size: 12px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
         font-weight: 500;
 
         @media screen and (min-width: 768px) {
@@ -146,12 +166,15 @@
     &__addr-link {
         display: inline-block;
         margin-bottom: 24px;
-        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.83;
         letter-spacing: 0.04em;
+        font-weight: 500;
         color: #D6936D;
 
         @media screen and (min-width: 768px) {
             font-size: 14px;
+            line-height: 1.83;
             margin-bottom: 26px;
         }
 
