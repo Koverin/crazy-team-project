@@ -1,16 +1,18 @@
 .products {
-  max-width: 480px;
+//   max-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 82px;
-    max-width: 769px;
+    // max-width: 769px;
   }
   @media screen and (min-width: 1200px) {
     padding-bottom: 66px;
-    max-width: 1200px;
+    // max-width: 1200px;
   }
+
+  
 }
 .products__caption {
   font-family: 'Montserrat';
@@ -65,6 +67,7 @@
   @media screen and (min-width: 1200px) {
     --items: 3;
     --indent: 32px;
+    flex-wrap: nowrap;
   }
 }
 
