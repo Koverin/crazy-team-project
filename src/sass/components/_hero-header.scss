@@ -306,8 +306,7 @@ body {
   @media screen and (min-width: 768px) {
     position: absolute;
     margin-top: 28px;
-    left: 690px;
-    display: flex;
+    right: 16px;
     flex-direction: column;
 
     gap: 20px;
@@ -315,8 +314,7 @@ body {
   @media screen and (min-width: 1200px) {
     position: absolute;
     margin-top: 56px;
-    left: 1132px;
-    display: flex;
+    right: 16px;
     flex-direction: column;
 
     gap: 20px;
@@ -325,7 +323,7 @@ body {
 
 .hero__list-item {
   @media screen and (min-width: 768px) {
-    display: flex;
+    text-align: right;
     flex-direction: column;
   }
 }
