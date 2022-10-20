@@ -33,7 +33,6 @@ button {
 
 body {
   font-style: normal;
-  background-color: #84a178;
 }
 
 .list {
@@ -73,6 +72,7 @@ body {
 .header {
   width: 100%;
   padding-top: 12px;
+  background-color: #84a178;
 }
 
 .header__group {
@@ -231,7 +231,7 @@ body {
     background-repeat: no-repeat;
     background-position-y: 100%;
     background-size: contain;
-    width: 768px;
+    width: 100%;
   }
   @media screen and (min-width: 1200px) {
     margin: 0 auto;
@@ -239,7 +239,7 @@ body {
     background-repeat: no-repeat;
     background-position-y: 100%;
     background-size: contain;
-    width: 1200px;
+    width: 100%;
   }
   @media screen and (max-width: 767px) {
     margin: 0 auto;
@@ -306,7 +306,7 @@ body {
   @media screen and (min-width: 768px) {
     position: absolute;
     margin-top: 28px;
-    left: 650px;
+    left: 690px;
     display: flex;
     flex-direction: column;
 
@@ -315,7 +315,7 @@ body {
   @media screen and (min-width: 1200px) {
     position: absolute;
     margin-top: 56px;
-    left: 1070px;
+    left: 1132px;
     display: flex;
     flex-direction: column;
 
