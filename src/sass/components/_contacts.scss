@@ -9,22 +9,22 @@
             height: 336px;
         }
     
-        @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
             height: 565px;
         }
     
-        &__container {
-            position: absolute;
-            top: -345px;
+    &__container {
+         position: absolute;
+         top: -345px;
     
-            @media screen and (min-width: 768px) {
-                top: -304px;
-            }
+    @media screen and (min-width: 768px) {
+         top: -304px;
+          }
     
-            @media screen and (min-width: 1200px) {
-                top: -96px;
-            }
-        }
+    @media screen and (min-width: 1200px) {
+          top: -96px;
+          }
+      }
 
     &__list {
         display: flex;
