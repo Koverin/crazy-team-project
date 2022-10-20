@@ -1,6 +1,6 @@
 .contacts {
     position: relative;
-    height: 1135px;
+    height: 1116px;
     display: flex;
     justify-content: center;
 
@@ -8,11 +8,11 @@
     background-image: linear-gradient(to right, rgba(132, 161, 120, 1), rgba(132, 161, 120, 1));
 
     @media screen and (min-width: 768px) {
-            height: 340px;
+            height: 330px;
         }
     
         @media screen and (min-width: 1200px) {
-            height: 565px;
+            height: 552px;
         }
     
         &__container {
@@ -73,6 +73,9 @@
     }
 
     &__title {
+        display: flex;
+        align-items: center;
+        height: 16px;
         margin-right: auto;
         margin-bottom: 20px;
         padding: 0 22px;
