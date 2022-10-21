@@ -162,7 +162,7 @@ body {
   min-width: 152px;
   height: 42px;
   padding: 12px 52px 12px 34px;
-
+  cursor: pointer;
   border: none;
   background: #f8d24e;
   border-radius: 10px;
@@ -210,7 +210,6 @@ body {
 .header-hero {
   width: 100%;
   background-color: #84a178;
-  
 }
 
 .header-hero__dots {
@@ -229,7 +228,6 @@ body {
   @media screen and (min-width: 1200px) {
     padding-top: 0px;
     padding-bottom: 45px;
-    
   }
 
   @media screen and (min-width: 768px) {
@@ -409,7 +407,7 @@ body {
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 33px;
-    align-items: flex-end ;
+    align-items: flex-end;
   }
   @media screen and (min-width: 1200px) {
     gap: 14px;
@@ -687,6 +685,7 @@ body {
 .mobile-burg-btn {
   text-align: center;
   margin-top: 111px;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu__container {
