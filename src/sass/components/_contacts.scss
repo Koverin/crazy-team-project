@@ -1,6 +1,6 @@
 .contacts {
     position: relative;
-    height: 1116px;
+    height: 1090px;
     display: flex;
     justify-content: center;
 
@@ -8,11 +8,11 @@
     background-image: linear-gradient(to right, rgba(132, 161, 120, 1), rgba(132, 161, 120, 1));
 
     @media screen and (min-width: 768px) {
-            height: 330px;
+            height: 340px;
         }
     
         @media screen and (min-width: 1200px) {
-            height: 552px;
+            height: 567px;
         }
     
         &__container {
@@ -89,7 +89,8 @@
         @media screen and (min-width: 768px) {
             font-size: 14px;
             margin-bottom: 32px;
-            padding: 0 14px;
+            padding: 0 8px;
+            height: 12px;
         }
 
         @media screen and (min-width: 1200px) {
@@ -112,13 +113,12 @@
     &__tel,
     &__mail {
         font-size: 12px;
-        line-height: 1.83;
+        line-height: calc(18 / 12);
         font-weight: 500;
 
         @media screen and (min-width: 768px) {
             font-size: 14px;
             line-height: 1.83;
-            font-weight: 500;
         }
 
         @media screen and (min-width: 1200px) {
@@ -141,7 +141,6 @@
 
         @media screen and (min-width: 1200px) {
             font-size: 16px;
-            line-height: 1.83;
         }
 
         &--indent {
@@ -183,7 +182,7 @@
 
         @media screen and (min-width: 1200px) {
             font-size: 16px;
-            line-height: 1.83;
+            line-height: 1.86;
             margin-bottom: 32px;
         }
 
