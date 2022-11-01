@@ -274,6 +274,7 @@ body {
   }
   @media screen and (min-width: 1200px) {
     margin-top: 45px;
+
     position: absolute;
     width: 367px;
     font-size: 38px;
@@ -411,6 +412,7 @@ body {
   }
   @media screen and (min-width: 1200px) {
     gap: 14px;
+    align-items: center;
   }
 }
 
